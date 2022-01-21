@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(images/background.jpg);
+    background-position: 30%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: wheat;
+    margin: 1em 0;
+    width: 80%;
+    text-align: center;
+    /* border: 1px solid red; */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.container {
+    max-width: 450px;
+    height: 300px;
+    margin: 4em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    transition: all .5s ease-in-out;
+}
+
+.container:hover,
+.container:focus {
+    background-color: RGB(124,13,14,40%);
+}
+
+#username,
+#password{
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin-bottom: 1em;
+    padding-bottom: .5em;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#btn-login{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 80%;
+    margin: 1em;
+    padding: 6px 18px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to right, #7C0D0E, wheat);
+    transition: all .5s ease-in-out;
+}
+
+#btn-login:hover,
+#btn-login:focus {
+    color: wheat;
+    transform: scale(1.05);
+}
+
+::placeholder {
+    color: wheat;
+}
